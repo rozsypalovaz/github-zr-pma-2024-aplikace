@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "98620603843",
+    "project_id": "semestralniprojektpmazr",
+    "storage_bucket": "semestralniprojektpmazr.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98620603843:android:db7e6023e457bfa6e65176",
+        "android_client_info": {
+          "package_name": "com.example.semestralniprojektpma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3F_LjXB2qOpKSfxbNJJLaTsQeM5jG3Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

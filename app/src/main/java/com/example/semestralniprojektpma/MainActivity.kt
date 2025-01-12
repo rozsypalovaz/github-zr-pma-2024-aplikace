@@ -18,8 +18,6 @@ import com.example.semestralniprojektpma.VytvoritUkol
 class MainActivity : AppCompatActivity() {
 
 
-
-
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
