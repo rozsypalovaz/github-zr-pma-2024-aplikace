@@ -81,7 +81,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/uploadName"
+            android:id="@+id/nazev"
             android:background="@drawable/modry_ramecek"
             android:layout_marginTop="20dp"
             android:padding="16dp"
@@ -94,7 +94,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/uploadOperator"
+            android:id="@+id/text"
             android:background="@drawable/modry_ramecek"
             android:layout_marginTop="20dp"
             android:padding="16dp"
@@ -107,7 +107,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/uploadLocation"
+            android:id="@+id/pocetBodu"
             android:background="@drawable/modry_ramecek"
             android:layout_marginTop="20dp"
             android:padding="16dp"
@@ -120,7 +120,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/uploadPhone"
+            android:id="@+id/kategorie"
             android:background="@drawable/modry_ramecek"
             android:layout_marginTop="20dp"
             android:padding="16dp"
@@ -133,7 +133,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Save"
+            android:text="Uložit výzvu"
             android:id="@+id/saveButton"
             android:textSize="18sp"
             android:layout_marginTop="20dp"
