@@ -59,7 +59,7 @@
 
         <!-- Text pro návrat zpět na úvodní stránku -->
         <TextView
-            android:id="@+id/backToHomeText"
+            android:id="@+id/domuText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Zpět na přehled"
@@ -85,109 +85,29 @@
             android:id="@+id/nameSurname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jméno Příjmení"
+            android:text="Nejsi přihlášen. Jakmile se přihlásíš, zobrazí se zde všechny důležité informace :)"
             android:textSize="18sp"
             android:textColor="#000000"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="100dp"/>
 
-        <!-- Email -->
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="email@example.com"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp"/>
-
-        <!-- ID uživatele -->
-        <TextView
-            android:id="@+id/userId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ID uživatele: 123456"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp"/>
-
-        <!-- Datum registrace -->
-        <TextView
-            android:id="@+id/registrationDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Datum registrace: 01.01.2022"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp"/>
-
-        <!-- Počet přidaných výzev -->
-        <TextView
-            android:id="@+id/challengesAdded"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Přidané výzvy: 5"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp"/>
-
-        <!-- Počet získaných bodů -->
-        <TextView
-            android:id="@+id/pointsEarned"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Získané body: 120"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp"/>
-
-        <!-- Počet splněných výzev -->
-        <TextView
-            android:id="@+id/completedChallenges"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Splněné výzvy: 3"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp"/>
-
-        <!-- Moje důkazy -->
-        <TextView
-            android:id="@+id/myProofs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Moje důkazy"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:paddingTop="24dp"
-            android:paddingBottom="16dp"/>
-
-        <!-- Seznam důkazů -->
-        <LinearLayout
-            android:id="@+id/proofsList"
+        <Button
+            android:id="@+id/btnPrihlaseni"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="Přihlášení"
+            android:backgroundTint="#E3E8FF"
+            android:textColor="#0000FF"
+            android:layout_marginBottom="16dp" />
 
-            <!-- Důkaz 1 -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Důkaz 1: Popis důkazu"
-                android:textSize="14sp"
-                android:textColor="#000000"
-                android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btnRegistrace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrace"
+            android:backgroundTint="#E3E8FF"
+            android:textColor="#0000FF"
+            android:layout_marginBottom="16dp" />
 
-            <!-- Důkaz 2 -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Důkaz 2: Popis důkazu"
-                android:textSize="14sp"
-                android:textColor="#000000"
-                android:paddingBottom="8dp" />
-
-        </LinearLayout> <!-- Uzavření LinearLayout pro seznam důkazů -->
 
     </LinearLayout>
 

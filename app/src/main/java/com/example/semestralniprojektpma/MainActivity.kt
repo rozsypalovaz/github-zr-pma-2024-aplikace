@@ -4,6 +4,7 @@ package com.example.semestralniprojektpma
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
@@ -13,9 +14,11 @@ import com.example.semestralniprojektpma.MujUcet
 import com.example.semestralniprojektpma.R
 import com.example.semestralniprojektpma.Ukoly
 import com.example.semestralniprojektpma.VytvoritUkol
+import com.example.semestralniprojektpma.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+
 
 
     @SuppressLint("MissingInflatedId")
