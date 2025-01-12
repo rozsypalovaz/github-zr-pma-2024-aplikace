@@ -15,9 +15,14 @@
         android:theme="@style/Theme.SemestralniProjekt"
         tools:targetApi="31">
         <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
-
         <activity
             android:name=".SignupActivity"
             android:exported="true">
@@ -27,7 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -37,14 +41,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".Ukoly" />
         <activity android:name=".MujUcet" />
         <activity android:name=".Dukazy" />
         <activity android:name=".VytvoritUkol" />
-
-
     </application>
 
 </manifest>
