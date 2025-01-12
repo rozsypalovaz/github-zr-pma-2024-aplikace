@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#FFFFFF">
+    android:background="@color/white">
 
     <!-- První část s relativním layoutem pro logo a profilové informace -->
     <androidx.cardview.widget.CardView
@@ -47,7 +47,6 @@
                 android:contentDescription="Profil uživatele"
                 android:src="@drawable/baseline_account_box_24" />
 
-
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
@@ -66,7 +65,7 @@
             android:id="@+id/greetingText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ahoj!"
+            android:text="Vytvořit úkol"
             android:textSize="40sp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -77,30 +76,10 @@
             android:id="@+id/statisticsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Celkem máš splněno xy výzev!"
+            android:text="@string/pridani_vyzvi_popis"
             android:textSize="16sp"
             android:textColor="#000000"
-            android:paddingBottom="5dp" />
-
-        <TextView
-            android:id="@+id/Text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Získal jsi xy bodů."
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="30dp" />
-
-        <!-- Sekce "Kam teď?" -->
-        <TextView
-            android:id="@+id/whereToText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kam teď?"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:paddingBottom="16dp" />
+            android:paddingBottom="25dp" />
 
         <!-- Tlačítka -->
         <LinearLayout
@@ -108,23 +87,46 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnUkoly"
+            <EditText
+                android:id="@+id/zadej_nazev"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="#E3E8FF"
-                android:text="Úkoly"
-                android:textColor="#0000FF" />
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:hint="Název výzvi"
+                android:inputType="text"
+                android:background="#E3E8FF"
+                android:layout_marginBottom="10dp"
+                />
 
-            <Button
-                android:id="@+id/btnProofs"
+            <EditText
+                android:id="@+id/largeEditText"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="#E3E8FF"
-                android:text="Důkazy"
-                android:textColor="#0000FF" />
+                android:layout_height="100dp"
+                android:hint="Zadejte popis úkolu"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#E3E8FF"
+                />
+
+            <EditText
+                android:id="@+id/points"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Za kolik bodů je úkol?"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#E3E8FF"
+                />
+
+            <!-- Počet bodů, kategorie -->
 
             <Button
                 android:id="@+id/btnCreateTask"
@@ -132,17 +134,9 @@
                 android:layout_height="60dp"
                 android:backgroundTint="#E3E8FF"
                 android:text="Vytvořit úkol"
-                android:textColor="#0000FF"
+                android:textColor="@color/white"
+                android:background="@color/blue"
                 android:radius="50dp"/>
-
-            <Button
-                android:id="@+id/btnProfile"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="#E3E8FF"
-                android:text="Můj profil"
-                android:textColor="#0000FF"/>
 
         </LinearLayout>
     </LinearLayout>

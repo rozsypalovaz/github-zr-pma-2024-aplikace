@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- První část s relativním layoutem pro logo a profilové informace -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recCard"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Logo aplikace"
+                android:src="@drawable/bluelogo" />
+
+            <!-- Ikona profilu -->
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="Profil uživatele"
+                android:src="@drawable/baseline_account_box_24" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Druhá část s lineárním layoutem pro tlačítka a texty -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <!-- Text pro návrat zpět na úvodní stránku -->
+        <TextView
+            android:id="@+id/backToHomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zpět na přehled"
+            android:textSize="16sp"
+            android:textColor="#0000FF"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/dukazy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Můj účet"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingTop="30dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Jméno a Příjmení -->
+        <TextView
+            android:id="@+id/nameSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jméno Příjmení"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@example.com"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <!-- ID uživatele -->
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID uživatele: 123456"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <!-- Datum registrace -->
+        <TextView
+            android:id="@+id/registrationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datum registrace: 01.01.2022"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <!-- Počet přidaných výzev -->
+        <TextView
+            android:id="@+id/challengesAdded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Přidané výzvy: 5"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <!-- Počet získaných bodů -->
+        <TextView
+            android:id="@+id/pointsEarned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Získané body: 120"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <!-- Počet splněných výzev -->
+        <TextView
+            android:id="@+id/completedChallenges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Splněné výzvy: 3"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <!-- Moje důkazy -->
+        <TextView
+            android:id="@+id/myProofs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moje důkazy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingTop="24dp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Seznam důkazů -->
+        <LinearLayout
+            android:id="@+id/proofsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Důkaz 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Důkaz 1: Popis důkazu"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp" />
+
+            <!-- Důkaz 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Důkaz 2: Popis důkazu"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp" />
+
+        </LinearLayout> <!-- Uzavření LinearLayout pro seznam důkazů -->
+
+    </LinearLayout>
+
+</LinearLayout>

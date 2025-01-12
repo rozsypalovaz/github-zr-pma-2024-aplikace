@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">SemestralniProjektPMA</string>
+    <string name="app_name">SemestralniProjekt</string>
+    <string name="pridani_vyzvi_popis">Vyplň název výzvy, popis pravidel, vyber kategorii a nastav počet bodů, které lze získat za její splnění. Tvoje výzva se po odeslání přidá do seznamu a může motivovat ostatní k účasti!</string>
+    <string name="ukoly_popis">V této sekci najdeš různé sportovní výzvy, které si můžeš vybrat a plnit podle svého tempa. Každý úkol má specifická pravidla a možnost nahrát důkaz o splnění, za které získáš body </string>
+
 </resources>
