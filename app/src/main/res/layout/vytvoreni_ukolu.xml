@@ -54,18 +54,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-
         android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp">
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
 
-        <!-- Texty a tlačítka -->
         <TextView
-            android:id="@+id/greetingText"
+            android:id="@+id/vytvorUkol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vytvořit úkol"
+            android:text="Vytvoř úkol"
             android:textSize="40sp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -81,64 +78,69 @@
             android:textColor="#000000"
             android:paddingBottom="25dp" />
 
-        <!-- Tlačítka -->
-        <LinearLayout
+        <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="60dp"
+            android:id="@+id/uploadName"
+            android:background="@drawable/modry_ramecek"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Název výzvy"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
 
-            <EditText
-                android:id="@+id/zadej_nazev"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:padding="10dp"
-                android:hint="Název výzvi"
-                android:inputType="text"
-                android:background="#E3E8FF"
-                android:layout_marginBottom="10dp"
-                />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadOperator"
+            android:background="@drawable/modry_ramecek"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Krátký popis"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
 
-            <EditText
-                android:id="@+id/largeEditText"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Zadejte popis úkolu"
-                android:inputType="textMultiLine"
-                android:gravity="top|start"
-                android:scrollbars="vertical"
-                android:maxLines="10"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#E3E8FF"
-                />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadLocation"
+            android:background="@drawable/modry_ramecek"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Počet bodů"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
 
-            <EditText
-                android:id="@+id/points"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Za kolik bodů je úkol?"
-                android:inputType="textMultiLine"
-                android:gravity="top|start"
-                android:scrollbars="vertical"
-                android:maxLines="10"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#E3E8FF"
-                />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadPhone"
+            android:background="@drawable/modry_ramecek"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Kategorie"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
 
-            <!-- Počet bodů, kategorie -->
-
-            <Button
-                android:id="@+id/btnCreateTask"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:backgroundTint="#E3E8FF"
-                android:text="Vytvořit úkol"
-                android:textColor="@color/white"
-                android:background="@color/blue"
-                android:radius="50dp"/>
-
-        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Save"
+            android:id="@+id/saveButton"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/blue"
+            app:cornerRadius = "20dp"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -117,11 +117,11 @@ public class LoginActivity extends AppCompatActivity {
 
                         startActivity(intent);
                     } else {
-                        loginPassword.setError("Invalid Credentials");
+                        loginPassword.setError("Neplatné přihlašovací údaje");
                         loginPassword.requestFocus();
                     }
                 } else {
-                    loginUsername.setError("User does not exist");
+                    loginUsername.setError("Uživatel neexistuje");
                     loginUsername.requestFocus();
                 }
             }
