@@ -71,85 +71,17 @@
 
         <!-- Jméno výzvy -->
         <TextView
-            android:id="@+id/greetingText"
+            android:id="@+id/dukazy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jméno Výzvy"
+            android:text="Důkazy"
             android:textSize="40sp"
             android:textStyle="bold"
             android:textColor="#000000"
             android:paddingTop="30dp"
             android:paddingBottom="8dp" />
 
-        <!-- Kategorie -->
-        <TextView
-            android:id="@+id/challengeDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kategorie"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp" />
 
-        <!-- Počet bodů -->
-        <TextView
-            android:id="@+id/challengePoints"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Počet bodů:"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp" />
-
-        <!-- Status popisu: Splněn/nesplněn -->
-        <TextView
-            android:id="@+id/challengeDescriptionStatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Popis"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp" />
-
-        <TextView
-            android:id="@+id/Popis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Popis popisu"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp" />
-
-        <!-- Pravidla -->
-        <TextView
-            android:id="@+id/challengeRules"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pravidla"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp" />
-
-        <!-- Pravidla -->
-        <TextView
-            android:id="@+id/pravidlaPopis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pravidla"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:paddingBottom="16dp" />
-
-
-        <!-- Tlačítko pro potvrzení splnění výzvy -->
-        <Button
-            android:id="@+id/finishedChallengeFemaleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Výzvu jsem splnila!"
-            android:backgroundTint="#E3E8FF"
-            android:textColor="#0000FF"
-            android:layout_marginBottom="16dp" />
 
     </LinearLayout>
 

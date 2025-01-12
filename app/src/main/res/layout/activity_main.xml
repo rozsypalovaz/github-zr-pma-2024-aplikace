@@ -141,7 +141,7 @@
                 android:layout_height="60dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="#E3E8FF"
-                android:text="Můj profil"
+                android:text="Můj účet"
                 android:textColor="#0000FF"/>
 
         </LinearLayout>
