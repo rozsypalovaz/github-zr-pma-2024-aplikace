@@ -4,13 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.semestralniprojektpma.MujUcet
-import com.example.semestralniprojektpma.R
-import com.example.semestralniprojektpma.MainActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.firebase.ui.database.FirebaseRecyclerOptions
 
 
+public class Ukoly : AppCompatActivity() {
 
-class Ukoly : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
